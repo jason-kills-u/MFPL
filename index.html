@@ -2,7 +2,11 @@
 <html>
   <body>
     <iframe width="420" id="ytplayer" height="315" src="https://youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0" allow="autoplay"></iframe>
-    <script> // Load the IFrame Player API code asynchronously. 
+    <script> 
+      /*
+         https://stackoverflow.com/questions/3405242/how-can-i-autoplay-a-video-using-the-new-embed-code-style-for-youtube
+      */
+      // Load the IFrame Player API code asynchronously. 
       var tag = document.createElement('script'); 
       tag.src = "https://www.youtube.com/player_api"; 
       var firstScriptTag = document.getElementsByTagName('script')[0]; 
